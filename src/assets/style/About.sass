@@ -1,0 +1,54 @@
+$font-color: #a2a2a2
+$primary-color: #8f8f8f
+#about
+  word-wrap: break-word
+  .v-label
+    color: rgba(0, 0, 0, 0.80)
+  .v-input input
+    color: rgba(0, 0, 0, 0.80)
+  ul
+    margin: 0
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+    list-style: none
+    li
+      padding: 40px
+      width: 500px
+      transition: box-shadow .3s
+      box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19)
+      color: $primary-color
+      color: #555
+      color: $primary-color
+      h3:after
+        width: 25px
+      span
+        font-size: 2.6em
+        display: block
+        transition: color .3s
+        color: $font-color
+        &:before, &:after
+          position: static
+      h3
+        color: darken($font-color, 20%)
+        display: inline-block
+        font-size: 24px
+        font-weight: 100
+        transition: color .3s
+        &:after
+          position: relative
+          left: 50%
+          top: 20px
+          transform: translateX(-50%)
+          display: block
+          width: 40px
+          height: 1px
+          background: darken($font-color, 20%)
+          transition: width .3s
+      p
+        color: $font-color
+        text-align: left
+        text-indent: 1em
+        font-size: 16px
+        line-height: 26px
+        transition: color .3s
