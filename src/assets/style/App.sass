@@ -1,10 +1,18 @@
 $primary-color: #8f8f8f
 
-#content1, #content2, #content4, #content5
+#content1, #content2, #content5
   height: 100vh
 
+#content2, #content4
+  background: -webkit-radial-gradient(55% 330%, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 550%), -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.6) 50%), -webkit-linear-gradient(bottom left, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 120%)
+  background: radial-gradient(55% 330%, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 550%), linear-gradient(to top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.6) 50%), linear-gradient(to top right, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 120%)
+  background-color: #DFE3E4
+  background-blend-mode: color-burn, screen, color-burn
+
 #content3, #content5
-  background: rgba(0, 0, 0, 0.1)
+  background-image: -webkit-linear-gradient(left, #F4F4F4 4%, #DFDEDC 99%)
+  background-image: linear-gradient(to right, #F4F4F4 4%, #DFDEDC 99%)
+
 
 .header
   width: 100%
