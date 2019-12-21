@@ -20,7 +20,7 @@
             <v-container>
               <v-row>
                 <v-col>
-                  <div v-html="$sanitize(year.content)"></div>
+                  <div v-html="$sanitize(year.content)" class="history"></div>
                 </v-col>
               </v-row>
             </v-container>
@@ -148,3 +148,8 @@ export default {
   }),
 }
 </script>
+
+<style
+  lang="sass"
+  src="../assets/style/History.sass"
+/>

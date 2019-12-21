@@ -1,0 +1,49 @@
+{
+  "info": {
+    "html": {
+      "rating": 3, "experience": "8年"
+    },
+    "js": {
+      "rating": 4, "experience": "8年"
+    },
+    "ts": {
+      "rating": 2.5, "experience": "1年"
+    },
+    "css": {
+      "rating": 2.5, "experience": "8年"
+    },
+    "ts": {
+      "rating": 2.5, "experience": "1年"
+    },
+    "angular": {
+      "rating": 3, "experience": "1年"
+    },
+    "react": {
+      "rating": 3, "experience": "1年"
+    },
+    "vue": {
+      "rating": 1.5, "experience": "0.01年"
+    },
+    "bs": {
+      "rating": 2.5, "experience": "1年"
+    },
+    "java": {
+      "rating": 4, "experience": "10年"
+    },
+    "oracle": {
+      "rating": 3.5, "experience": "8年"
+    },
+    "postgres": {
+      "rating": 2.5, "experience": "?年"
+    },
+    "mysql": {
+      "rating": 2, "experience": "?年"
+    },
+    "git": {
+      "rating": 3, "experience": "7年"
+    },
+    "nodejs": {
+      "rating": 3, "experience": "4年"
+    }
+  }
+}

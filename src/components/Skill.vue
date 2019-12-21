@@ -40,8 +40,8 @@
                   </svg>
                   <v-divider class="mx-4"></v-divider>
                   <v-card-text>
-                    経験年数：8年
-                    <v-rating v-model="rating.html" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
+                    経験年数：{{ info.html.experience }}
+                    <v-rating v-model="info.html.rating" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -57,8 +57,8 @@
                   </svg>
                   <v-divider class="mx-4"></v-divider>
                   <v-card-text>
-                    経験年数：8年
-                    <v-rating v-model="rating.js" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
+                    経験年数：{{ info.js.experience }}
+                    <v-rating v-model="info.js.rating" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -73,8 +73,8 @@
                   </svg>
                   <v-divider class="mx-4"></v-divider>
                   <v-card-text>
-                    経験年数：1年
-                    <v-rating v-model="rating.ts" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
+                    経験年数：{{ info.ts.experience }}
+                    <v-rating v-model="info.ts.rating" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -92,8 +92,8 @@
                   </svg>
                   <v-divider class="mx-4"></v-divider>
                   <v-card-text>
-                    経験年数：8年
-                    <v-rating v-model="rating.css" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
+                    経験年数：{{ info.css.experience }}
+                    <v-rating v-model="info.css.rating" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -110,8 +110,8 @@
                   </svg>
                   <v-divider class="mx-4"></v-divider>
                   <v-card-text>
-                    経験年数：1年
-                    <v-rating v-model="rating.angular" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
+                    経験年数：{{ info.angular.experience }}
+                    <v-rating v-model="info.angular.rating" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -126,8 +126,8 @@
                   </svg>
                   <v-divider class="mx-4"></v-divider>
                   <v-card-text>
-                    経験年数：1年
-                    <v-rating v-model="rating.react" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
+                    経験年数：{{ info.react.experience }}
+                    <v-rating v-model="info.react.rating" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -144,8 +144,8 @@
                   </svg>
                   <v-divider class="mx-4"></v-divider>
                   <v-card-text>
-                    経験年数：0.01年
-                    <v-rating v-model="rating.vue" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
+                    経験年数：{{ info.vue.experience }}
+                    <v-rating v-model="info.vue.rating" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -160,8 +160,8 @@
                   </svg>
                   <v-divider class="mx-4"></v-divider>
                   <v-card-text>
-                    経験年数：1年
-                    <v-rating v-model="rating.bs" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
+                    経験年数：{{ info.bs.experience }}
+                    <v-rating v-model="info.bs.rating" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -186,8 +186,8 @@
                   </svg>
                   <v-divider class="mx-4"></v-divider>
                   <v-card-text>
-                    経験年数：10年
-                    <v-rating v-model="rating.java" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
+                    経験年数：{{ info.java.experience }}
+                    <v-rating v-model="info.java.rating" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -206,8 +206,8 @@
                   </svg>
                   <v-divider class="mx-4"></v-divider>
                   <v-card-text>
-                    経験年数：8年
-                    <v-rating v-model="rating.oracle" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
+                    経験年数：{{ info.oracle.experience }}
+                    <v-rating v-model="info.oracle.rating" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -232,8 +232,8 @@
                   </svg>
                   <v-divider class="mx-4"></v-divider>
                   <v-card-text>
-                    経験年数：？
-                    <v-rating v-model="rating.postgres" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
+                    経験年数：{{ info.postgres.experience }}
+                    <v-rating v-model="info.postgres.rating" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -248,8 +248,8 @@
                   </svg>
                   <v-divider class="mx-4"></v-divider>
                   <v-card-text>
-                    経験年数：？
-                    <v-rating v-model="rating.mysql" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
+                    経験年数：{{ info.mysql.experience }}
+                    <v-rating v-model="info.mysql.rating" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -268,7 +268,8 @@
                   </svg>
                   <v-divider class="mx-4"></v-divider>
                   <v-card-text>
-                    <v-rating v-model="rating.git" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
+                    経験年数：{{ info.git.experience }}
+                    <v-rating v-model="info.git.rating" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -283,7 +284,8 @@
                   </svg>
                   <v-divider class="mx-4"></v-divider>
                   <v-card-text>
-                    <v-rating v-model="rating.nodejs" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
+                    経験年数：{{ info.nodejs.experience }}
+                    <v-rating v-model="info.nodejs.rating" background-color="grey lighten-1" color="yellow darken-1" medium readonly dense half-increments></v-rating>
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -298,25 +300,9 @@
 </template>
 
 <script>
+  import skill from '../assets/data/skill.json';
   export default {
-    data: () => ({
-      rating: {
-        html: 3,
-        js: 4,
-        ts: 2,
-        css: 2.5,
-        angular: 3,
-        react: 3,
-        vue: 1.5,
-        bs: 2.5,
-        java: 4,
-        oracle: 3.5,
-        postgres: 2,
-        mysql: 2,
-        git: 3.5,
-        nodejs: 3
-      }
-    }),
+    data: () => skill,
   }
 </script>
 
